@@ -3,13 +3,13 @@ JQuery Carousel plugin - practice project
 
 To Run,
 - Embed JQuery, my script and css on the HTML page where you'd like the carousel displayed as seen in the sample index.html I have provided
-'''
+```
         <link rel='stylesheet' type='text/css' href='dist/sass/style.css'/>
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>     
         <script type="text/javascript" src="src/JS/carousel_plugin.js"></script>      
-'''
+```
  - Then include the following structure on your page with the URLs of the images you'd like to display:
-'''
+```
         <div class="carousel">
 	        <div class="slides">
 	            <ul>
@@ -21,9 +21,9 @@ To Run,
 	            </ul>
 	        </div>
         </div>
-'''
+```
 - Finally, call the script targeting the class of the outer div and specify your options as seen below:
-'''
+```
         <script type="text/javascript">
             $(document).ready(function(){
                 $('.carousel').ErikzCarousel({
@@ -36,4 +36,4 @@ To Run,
                 });
             });
         </script>
-'''
+```
