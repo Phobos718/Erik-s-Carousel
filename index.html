@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Amazing Carousel (It's supposed to amaze people)</title>
+        <link rel='stylesheet' type='text/css' href='dist/sass/style.css'/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <<!-- script type="text/javascript" src="dist/carousel_plugin.min.js"></script> -->        
+        <script type="text/javascript" src="src/JS/carousel_plugin.js"></script>      
+    </head>
+    <body>
+        <div class="carousel">
+
+        <!-- Images / Slides -->
+	        <div class="slides">
+	            <ul>
+	            	<li class='slide_active'><img src="src/assets/image1.jpg"></li>
+	            	<li class='slide'><img src="src/assets/image2.jpg"></li>
+	            	<li class='slide'><img src="src/assets/image3.jpg"></li>
+                    <li class='slide'><img src="src/assets/image4.jpg"></li>
+                    <li class='slide'><img src="src/assets/image5.jpg"></li>
+	            </ul>
+	        </div>
+        </div>
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.carousel').ErikzCarousel({
+                    indicator: true,
+                    buttons: true,
+                    loopable: true,
+                    autoplay: false,
+                    animation: 'slide',
+                    animSpeed: 500
+                });
+            });
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
